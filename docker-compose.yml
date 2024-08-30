@@ -1,0 +1,10 @@
+services:
+  xampp:
+    image: fredblgr/ubuntu-xampp:2020
+    ports:
+      - "8091:80"
+      - "443:443"
+      - "3306:3306"
+    container_name: xampp_container
+    volumes:
+      - ./htdocs:/opt/lampp/htdocs
